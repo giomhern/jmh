@@ -33,12 +33,12 @@ const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse 
             <p className="font-normal md:text-md text-sm">Launch of the service side and launch of entrepreneurship course on August 13.</p>
         </li>
     </ol>
-    <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl whitespace-nowrap'>My Business Journey</h2>
+    <h2 className='py-2 md:py-10 md:px-20 px-5 md:whitespace-normal capitalize font-bold text-xl md:text-3xl whitespace-nowrap'>My Business Journey</h2>
 </div>;
 
 
 const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-center items-center p-7 md:px-20'>
-    <h2 className='flex items-center py-2 md:py-10 capitalize font-bold text-xl md:text-6xl'>About Me 🧔🏻</h2>
+    <h2 className='flex items-center py-2 md:py-10 capitalize font-bold text-xl md:text-3xl'>About Me 🧔🏻</h2>
     <div className='p-7 md:text-md text-sm'>
         <p className='pb-5'>Despite facing numerous challenges as an undocumented/DACA immigrant, including epilepsy and a move to the United States at a young age, I have excelled in my studies and career. I started my first business at age 19 and I scaled it to generate $8,000 in earnings to finance my studies at UCLA.</p>
         <p>I have also participated in numerous startup accelerator programs including:</p>
@@ -56,7 +56,7 @@ const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-cente
 
 
 const impactSection = <div className='px-7'>
-    <h2 className='flex justify-center items-center capitalize font-bold text-xl md:text-6xl pb-5'>my impact in numbers</h2>
+    <h2 className='flex justify-center items-center capitalize font-bold text-xl md:text-3xl pb-5'>my impact in numbers</h2>
     <div className='md:px-5 flex flex-col md:grid md:grid-cols-3 md:gap-[50px]'>
         {card(<a href='#'><svg className="hover:fill-blue-300 fill-white h-8 w-8 md:h-10 md:w-10" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg></a>, 'Tiktok', '4M+ Views', '18K+ Followers')}
         {card(<a href='#'><svg className="hover:fill-blue-300 fill-white h-8 w-8 md:h-10 md:w-10" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" /></svg></a>, 'Youtube', '200K+ Views', '1.6K+ Followers')}
@@ -117,7 +117,7 @@ export default function Home() {
                     <p className="mb-4 font-normal md:text-md text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
                 </li>
             </ol>
-            <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl'>👈 Join My Journey</h2>
+            <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-3xl'>👈 Join My Journey</h2>
             
         </div>
         {about}
@@ -125,7 +125,7 @@ export default function Home() {
         {impactSection} 
 
         <section className='md:px-20 px-10 py-10 md:py-20'>
-           <a className="capitalize lg:text-8xl md:text-6xl text-4xl font-extrabold flex justify-center hover:underline hover:underline-offset-4" href="mailto:jmayahern@preparebiz.com">Get in Touch.</a>
+           <a className="capitalize lg:text-8xl md:text-3xl text-4xl font-extrabold flex justify-center hover:underline hover:underline-offset-4" href="mailto:jmayahern@preparebiz.com">Get in Touch.</a>
         </section>
     
     </main>
