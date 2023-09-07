@@ -56,7 +56,7 @@ const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-cente
 
 
 const impactSection = <div className='px-7'>
-    <h2 className='flex justify-center items-center capitalize font-bold text-xl md:text-6xl pb-10'>my impact in numbers</h2>
+    <h2 className='flex justify-center items-center capitalize font-bold text-xl md:text-6xl pb-5'>my impact in numbers</h2>
     <div className='md:px-20  px-8 flex flex-col md:grid md:grid-cols-3 md:gap-7'>
         {card(<a href='#'><svg className="hover:fill-blue-300 fill-white h-8 w-8 md:h-10 md:w-10" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" /></svg></a>, 'Tiktok', '4M+ Views', '18K+ Followers')}
         {card(<a href='#'><svg className="hover:fill-blue-300 fill-white h-8 w-8 md:h-10 md:w-10" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" /></svg></a>, 'Youtube', '200K+ Views', '1.6K+ Followers')}
