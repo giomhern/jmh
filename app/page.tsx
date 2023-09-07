@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.css';
 
 
 const jumbo = <section className='flex md:px-20 md:py-10 px-10 py-2 justify-start font-extrabold'>
-    <p className='text-2xl break-words md:text-7xl'>A 23 year old <span className='text-black'>undocumented/DACA <br />  entrepreneur </span>sharing his journey  <br /> of <span className='text-black'>starting a business</span></p>
+    <p className='text-xl break-words md:text-7xl'>A 23 year old <span className='text-black'>undocumented/DACA <br />  entrepreneur </span>sharing his journey of <span className='text-black'>starting  <br /> a business</span></p>
 </section>
 
 const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center p-7 px-20'>
@@ -117,7 +117,7 @@ export default function Home() {
                     <p className="mb-4 font-normal md:text-lg text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
                 </li>
             </ol>
-            <h2 className='flex items-center py-2 md:py-10 px-20 capitalize font-bold text-3xl md:text-6xl'>👈 Join My Journey</h2>
+            <h2 className='flex items-center py-2 md:py-10 px-20 capitalize font-bold text-xl md:text-6xl'>👈 Join My Journey</h2>
         </div>
         {about}
         {bizSection}
