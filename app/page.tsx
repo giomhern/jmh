@@ -87,7 +87,7 @@ export default function Home() {
   return (
     <main className='min-h-screen bg-blue-600 text-white'>
         {jumbo}
-        <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center p-7 px-20'>
+        <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center py-5 px-20'>
             <ol className="relative border-l border-gray-200 dark:border-gray-700 py-3 text-white my-10 text-xl">
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
