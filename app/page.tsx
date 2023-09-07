@@ -92,28 +92,28 @@ export default function Home() {
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">01</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Startup Diaries 📖 (100+ Episodes)</h3>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Startup Diaries 📖 (100+ Episodes)</h3>
                     <p className="mb-4 font-normal md:text-md text-sm">Day to day learnings from working on my startup every single</p>
                 </li>
 
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Leverage Blog 🪜 (22+ Articles)</h3>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Blog 🪜 (22+ Articles)</h3>
                     <p className="mb-4 font-normal md:text-md text-sm">Weekly in depth learnings from working on my startup.</p>
                 </li>
 
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Leverage Podcast 📖 (1 Episode)</h3>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Podcast 📖 (1 Episode)</h3>
                     <p className="mb-4 font-normal md:text-md text-sm">Audio version of the Leverage Blog. Available on Spotify and Apple Podcasts.</p>
                 </li>
 
                 <li className="ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">04</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Mayarketing (Coming Soon)</h3>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Mayarketing (Coming Soon)</h3>
                     <p className="mb-4 font-normal md:text-md text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
                 </li>
             </ol>
