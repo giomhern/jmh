@@ -106,7 +106,7 @@ export default function Home() {
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Podcast 📖 (1 Episode)</h3>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Podcast 📖 (4 Episodes)</h3>
                     <p className="mb-4 font-normal md:text-md text-sm">Audio version of the Leverage Blog. Available on Spotify and Apple Podcasts.</p>
                 </li>
 
