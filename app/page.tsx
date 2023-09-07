@@ -33,13 +33,13 @@ const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse 
             <p className="font-normal md:text-md text-sm">Launch of the service side and launch of entrepreneurship course on August 13.</p>
         </li>
     </ol>
-    <h2 className='py-2 md:py-10 md:px-20 px-5 md:whitespace-normal capitalize font-bold text-xl md:text-4xl whitespace-nowrap'>My Business Journey</h2>
+    <h2 className='md:py-10 md:px-20 px-5 md:whitespace-normal capitalize font-bold text-xl md:text-4xl whitespace-nowrap'>My Business Journey</h2>
 </div>;
 
 
-const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-center items-center p-7 md:px-20'>
-    <h2 className='flex items-center py-2 md:py-10 capitalize font-bold text-xl md:text-4xl'>About Me 🧔🏻</h2>
-    <div className='p-7 md:text-lg text-sm'>
+const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-center items-center py-5 px-7 md:px-20'>
+    <h2 className='flex items-center md:py-10 capitalize font-bold text-xl md:text-4xl'>About Me 🧔🏻</h2>
+    <div className='px-7 py-3 md:text-lg text-sm'>
         <p className='pb-5'>Despite facing numerous challenges as an undocumented/DACA immigrant, including epilepsy and a move to the United States at a young age, I have excelled in my studies and career. I started my first business at age 19 and I scaled it to generate $8,000 in earnings to finance my studies at UCLA.</p>
         <p>I have also participated in numerous startup accelerator programs including:</p>
         <ul className='text-white list-disc px-10 pb-5'>
@@ -117,7 +117,12 @@ export default function Home() {
                     <p className="mb-4 font-normal md:text-md text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
                 </li>
             </ol>
-            <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl'>👈 Join My Journey</h2>
+            <h2 className='md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl'>
+                <span className="md:inline hidden">👈 </span>
+                <span className="md:hidden inline">👇 </span>
+                Join My Journey
+            </h2>
+
             
         </div>
         {about}
