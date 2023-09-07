@@ -72,7 +72,7 @@ const impactSection = <div className='px-7'>
 
 
 function card(tag: string | number | boolean | JSX.Element | Iterable<ReactNode> | PromiseLikeOfReactNode | null | undefined, title: string, views: string, followers: string) {
-    return <div className='rounded-xl py-2 px-10 border border-white'>
+    return <div className='rounded-xl py-2 px-10'>
         <div className='flex gap-x-6 justify-center'>
             {tag}
         </div>
