@@ -7,8 +7,8 @@ import 'swiper/swiper-bundle.css';
 
 
 
-const jumbo = <section className='flex md:px-20 md:py-10 px-20 py-2 justify-start font-extrabold'>
-    <p className='text-4xl break-words md:text-7xl'>A 23 year old <span className='text-black'>undocumented/DACA <br />  entrepreneur </span>sharing his journey  <br /> of <span className='text-black'>starting a business</span></p>
+const jumbo = <section className='flex md:px-20 md:py-10 px-10 py-2 justify-start font-extrabold'>
+    <p className='text-2xl break-words md:text-7xl'>A 23 year old <span className='text-black'>undocumented/DACA <br />  entrepreneur </span>sharing his journey  <br /> of <span className='text-black'>starting a business</span></p>
 </section>
 
 const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center p-7 px-20'>
