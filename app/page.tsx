@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.css';
 
 
 const jumbo = <section className='flex md:px-20 md:py-10 px-10 py-2 justify-start font-extrabold'>
-    <p className='text-2xl break-words md:text-7xl'>A 23 year old <span className='text-black'>undocumented/DACA  entrepreneur </span>sharing his journey of <span className='text-black'>starting  a business</span></p>
+    <p className='text-2xl break-words md:text-6xl mx-7 md:mx-10'>A 23 year old <span className='text-black'>undocumented/DACA  entrepreneur </span>sharing his journey of <span className='text-black'>starting  a business</span></p>
 </section>
 
 const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center p-7 px-20'>
@@ -16,21 +16,21 @@ const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse 
         <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
             <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
             <time className="mb-1 font-semibold text-sm text-blue-900 leading-none">2021</time>
-            <p className="mb-4 font-normal md:md:text-lg text-sm text-md">I wasn't able to get hired because I didn't have DACA. I had the initial idea of
+            <p className="mb-4 font-normal md:md:text-md text-sm text-md">I wasn't able to get hired because I didn't have DACA. I had the initial idea of
                 helping immigrant students get jobs.</p>
         </li>
 
         <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <time className="mb-1 font-semibold text-sm  text-blue-900 leading-none">2022</time>
-            <p className="font-normal md:text-lg text-sm">Launched a recruitment agency, freelance/contract platform, and a questions & answers platform I helped 2 DACA recipients get a job, helped 6
+            <p className="font-normal md:text-md text-sm">Launched a recruitment agency, freelance/contract platform, and a questions & answers platform I helped 2 DACA recipients get a job, helped 6
                 students get short term contract jobs (students made $2000 in revenue), had 800
                 users, 135 user signups, and 3.5M impressions on IG.</p>
         </li>
         <li className=" ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <time className="mb-1 text-sm font-semibold text-blue-900 leading-none">2023</time>
-            <p className="font-normal md:text-lg text-sm">Launch of the service side and launch of entrepreneurship course on August 13.</p>
+            <p className="font-normal md:text-md text-sm">Launch of the service side and launch of entrepreneurship course on August 13.</p>
         </li>
     </ol>
     <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl'>My Business journey</h2>
@@ -39,7 +39,7 @@ const bizSection = <div className='md:grid md:grid-cols-2 flex flex-col-reverse 
 
 const about = <div className='md:grid md:grid-cols-2 flex flex-col justify-center items-center p-7 md:px-20'>
     <h2 className='flex items-center py-2 md:py-10 capitalize font-bold text-xl md:text-6xl'>About Me 🧔🏻</h2>
-    <div className='p-7 md:text-xl text-md'>
+    <div className='p-7 md:text-md text-sm'>
         <p className='pb-5'>Despite facing numerous challenges as an undocumented/DACA immigrant, including epilepsy and a move to the United States at a young age, I have excelled in my studies and career. I started my first business at age 19 and I scaled it to generate $8,000 in earnings to finance my studies at UCLA.</p>
         <p>I have also participated in numerous startup accelerator programs including:</p>
         <ul className='text-white list-disc px-10 pb-5'>
@@ -92,32 +92,33 @@ export default function Home() {
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">01</p>
-                    <h3 className="md:text-lg text-sm font-semibold text-blue-900 dark:text-white">Startup Diaries 📖 (100+ Episodes)</h3>
-                    <p className="mb-4 font-normal md:text-lg text-sm">Day to day learnings from working on my startup every single</p>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Startup Diaries 📖 (100+ Episodes)</h3>
+                    <p className="mb-4 font-normal md:text-md text-sm">Day to day learnings from working on my startup every single</p>
                 </li>
 
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-lg text-sm font-semibold text-blue-900 dark:text-white">Leverage Blog 🪜 (22+ Articles)</h3>
-                    <p className="mb-4 font-normal md:text-lg text-sm">Weekly in depth learnings from working on my startup.</p>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Leverage Blog 🪜 (22+ Articles)</h3>
+                    <p className="mb-4 font-normal md:text-md text-sm">Weekly in depth learnings from working on my startup.</p>
                 </li>
 
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-lg text-sm font-semibold text-blue-900 dark:text-white">Leverage Podcast 📖 (1 Episode)</h3>
-                    <p className="mb-4 font-normal md:text-lg text-sm">Audio version of the Leverage Blog. Available on Spotify and Apple Podcasts.</p>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Leverage Podcast 📖 (1 Episode)</h3>
+                    <p className="mb-4 font-normal md:text-md text-sm">Audio version of the Leverage Blog. Available on Spotify and Apple Podcasts.</p>
                 </li>
 
                 <li className="ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">04</p>
-                    <h3 className="md:text-lg text-sm font-semibold text-blue-900 dark:text-white">Mayarketing (Coming Soon)</h3>
-                    <p className="mb-4 font-normal md:text-lg text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
+                    <h3 className="md:text-md text-sm font-semibold text-blue-900 dark:text-white">Mayarketing (Coming Soon)</h3>
+                    <p className="mb-4 font-normal md:text-md text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
                 </li>
             </ol>
-            <h2 className='flex justify-center items-center capitalize font-bold text-xl md:text-6xl pb-10'>👈 Join My Journey</h2>
+            <h2 className='py-2 md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:text-6xl'>👈 Join My Journey</h2>
+            
         </div>
         {about}
         {bizSection}
