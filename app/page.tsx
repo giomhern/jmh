@@ -77,8 +77,8 @@ function card(tag: string | number | boolean | JSX.Element | Iterable<ReactNode>
             {tag}
         </div>
         <div className='flex gap-x-5 pt-5 justify-center'>
-            <p className='lg:text-lg md:text-md text-xs font-md'>{views}</p>
-            <p className='lg:text-lg md:text-md  text-xs font-md'>{followers}</p>
+            <p className='lg:text-lg md:text-md text-sm font-md'>{views}</p>
+            <p className='lg:text-lg md:text-md  text-sm font-md'>{followers}</p>
         </div>
     </div>
 }
