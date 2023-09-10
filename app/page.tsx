@@ -89,7 +89,7 @@ export default function Home() {
                     <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
                     <p className="mb-1 font-normal text-sm leading-none">01</p>
                     <h3 className="md:text-md text-sm font-semibold text-blue-900">Startup Diaries 📖 (100+ Episodes)</h3>
-                    <p className="mb-4 font-normal md:text-md text-sm">Day to day learnings from working on my startup every single</p>
+                    <p className="mb-4 font-normal md:text-md text-sm">Day to day learnings from working on my startup</p>
                 </li>
 
                 <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
