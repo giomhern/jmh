@@ -2,6 +2,7 @@
 'use client';
 import { JSX, PromiseLikeOfReactNode } from 'react';
 import React, { ReactNode, Component } from 'react'
+import Navbar from './components/nav';
 
 const jumbo = <section className='flex md:px-20 md:py-10 px-10 py-2 justify-start font-extrabold'>
     <p className='text-2xl break-words md:text-4xl lg:text-6xl mx-7 md:mx-8 lg:mx-10'>A 24 year old <span className="text-bright">undocumented/DACA  entrepreneur </span>sharing his journey of <span className='text-bright'>starting  a business</span></p>
@@ -81,54 +82,75 @@ function card(tag: string | number | boolean | JSX.Element | Iterable<ReactNode>
 
 export default function Home() {
   return (
-    <main className='min-h-screen bg-blue-600 text-white'>
-        {jumbo}
-        <div className='md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center py-5 px-20'>
-            <ol className="relative border-l border-gray-200 dark:border-gray-700 py-3 my-10 text-xl">
-                <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
-                    <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
-                    <p className="mb-1 font-normal text-sm leading-none">01</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Startup Diaries 📖 (100+ Episodes)</h3>
-                    <p className="mb-4 font-normal md:text-md text-sm">Day to day learnings from working on my startup</p>
-                </li>
+    <main className="min-h-screen bg-blue-600 text-white">
+      <Navbar />
+      {jumbo}
+      <div className="md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center py-5 px-20">
+        <ol className="relative border-l border-gray-200 dark:border-gray-700 py-3 my-10 text-xl">
+          <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
+            <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
+            <p className="mb-1 font-normal text-sm leading-none">01</p>
+            <h3 className="md:text-md text-sm font-semibold text-blue-900">
+              Startup Diaries 📖 (100+ Episodes)
+            </h3>
+            <p className="mb-4 font-normal md:text-md text-sm">
+              Day to day learnings from working on my startup
+            </p>
+          </li>
 
-                <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
-                    <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
-                    <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Blog 🪜 (22+ Articles)</h3>
-                    <p className="mb-4 font-normal md:text-md text-sm">Weekly in depth learnings from working on my startup.</p>
-                </li>
+          <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
+            <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
+            <p className="mb-1 font-normal text-sm leading-none">03</p>
+            <h3 className="md:text-md text-sm font-semibold text-blue-900">
+              Leverage Blog 🪜 (22+ Articles)
+            </h3>
+            <p className="mb-4 font-normal md:text-md text-sm">
+              Weekly in depth learnings from working on my startup.
+            </p>
+          </li>
 
-                <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
-                    <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
-                    <p className="mb-1 font-normal text-sm leading-none">03</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Leverage Podcast 📖 (4 Episodes)</h3>
-                    <p className="mb-4 font-normal md:text-md text-sm">Audio version of the Leverage Blog. Available on Spotify and Apple Podcasts.</p>
-                </li>
+          <li className="mb-10 ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
+            <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
+            <p className="mb-1 font-normal text-sm leading-none">03</p>
+            <h3 className="md:text-md text-sm font-semibold text-blue-900">
+              Leverage Podcast 📖 (4 Episodes)
+            </h3>
+            <p className="mb-4 font-normal md:text-md text-sm">
+              Audio version of the Leverage Blog. Available on Spotify and Apple
+              Podcasts.
+            </p>
+          </li>
 
-                <li className="ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
-                    <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
-                    <p className="mb-1 font-normal text-sm leading-none">04</p>
-                    <h3 className="md:text-md text-sm font-semibold text-blue-900">Mayarketing (Coming Soon)</h3>
-                    <p className="mb-4 font-normal md:text-md text-sm">Marketing lessons from building my company, from mistakes to strategies that work for me.</p>
-                </li>
-            </ol>
-            <h2 className='md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:whitespace-normal md:text-6xl whitespace-nowrap'>
-                <span className="md:inline hidden">👈 </span>
-                <span className="md:hidden inline">👇 </span>
-                Join My Journey
-            </h2>
+          <li className="ml-4 bg-gray-100 text-blue-600 p-7 rounded-lg">
+            <div className="absolute w-3 h-3 bg-gray-100 rounded-full mt-1.5 -left-1.5 border border-yellow-200"></div>
+            <p className="mb-1 font-normal text-sm leading-none">04</p>
+            <h3 className="md:text-md text-sm font-semibold text-blue-900">
+              Mayarketing (Coming Soon)
+            </h3>
+            <p className="mb-4 font-normal md:text-md text-sm">
+              Marketing lessons from building my company, from mistakes to
+              strategies that work for me.
+            </p>
+          </li>
+        </ol>
+        <h2 className="md:py-10 md:px-20 px-5 capitalize font-bold text-xl md:whitespace-normal md:text-6xl whitespace-nowrap">
+          <span className="md:inline hidden">👈 </span>
+          <span className="md:hidden inline">👇 </span>
+          Join My Journey
+        </h2>
+      </div>
+      {about}
+      {bizSection}
+      {impactSection}
 
-            
-        </div>
-        {about}
-        {bizSection}
-        {impactSection} 
-
-        <section className='md:px-20 px-10 py-10 md:py-20'>
-           <a className="capitalize lg:text-8xl md:text-6xl text-4xl font-extrabold flex justify-center hover:underline hover:underline-offset-4" href="mailto:jmayahern@preparebiz.com">Get in Touch.</a>
-        </section>
-    
+      <section className="md:px-20 px-10 py-10 md:py-20">
+        <a
+          className="capitalize lg:text-8xl md:text-6xl text-4xl font-extrabold flex justify-center hover:underline hover:underline-offset-4"
+          href="mailto:jmayahern@preparebiz.com"
+        >
+          Get in Touch.
+        </a>
+      </section>
     </main>
-  )
+  );
 }

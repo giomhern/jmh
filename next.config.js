@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "docs.material-tailwind.com",
+        hostname: "images.unsplash.com",
       },
     ],
   },
