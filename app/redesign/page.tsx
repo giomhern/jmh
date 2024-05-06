@@ -61,7 +61,7 @@ export default function HomePage() {
       </section>
 
       <section className="bg-gray-100 py-24 flex flex-col justify-center rounded-t-[150px]">
-        <p className="font-semibold tracking-tight max-w-lg leading-[1.5] mx-auto text-gray-800 break-words leading-regular text-4xl text-center pb-10">
+        <p className="font-semibold tracking-tight leading-[1.5] mx-auto text-gray-800 break-words leading-regular text-4xl text-center pb-10">
           Utilize social networks to create meaningful impact.
         </p>
 
@@ -75,18 +75,24 @@ export default function HomePage() {
           <div className="flex-grow border-t border-gray-300"></div>
         </div>
 
-        <ul className="max-w-xl mx-auto pt-5 list-none">
-          <li className="flex flex-col space-y-3">
-            {impressions.map((impression) => {
-              return (
-                <li key={impression.id}>
+        <ul className="flex justify-center items-center pt-5 space-x-24 list-none">
+          {impressions.map((impression) => {
+            return (
+              <li key={impression.id} className="space-y-3">
+                <div className="h-16 py-3 flex items-center">
                   {impression.platform}
-                  <p>{impression.header}</p>
-                  <p>{impression.subheader}</p>
-                </li>
-              );
-            })}
-          </li>
+                </div>
+                <div>
+                  <p className="text-4xl text-gray-800 font-semibold tracking-tight">
+                    {impression.header}
+                  </p>
+                  <p className="tracking-tight text-gray-500">
+                    {impression.subheader}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </main>

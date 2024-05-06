@@ -3,10 +3,14 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "images.unsplash.com",
+        protocol: "https", 
+        hostname: "cdn.sanity.io", 
       },
     ],
   },
+  experimental: {
+    taint: true
+  }
 };
 
 module.exports = nextConfig
