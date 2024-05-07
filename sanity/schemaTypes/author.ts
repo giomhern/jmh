@@ -26,7 +26,7 @@ export default defineType({
       options: {
         hotspot: true,
       },
-      fields: [
+      fieldset: [
         {
           name: 'alt',
           type: 'string',
