@@ -1,7 +1,7 @@
 import { QueryParams, SanityDocument } from "next-sanity";
 import { notFound } from "next/navigation";
 
-import { POST_QUERY, POSTS_QUERY } from "@/sanity/lib/queries";
+import { POSTS_QUERY, POST_QUERY } from "@/sanity/lib/queries";
 import { Post } from "@/app/components/Post";
 import { sanityFetch } from "@/sanity/lib/fetch";
 
