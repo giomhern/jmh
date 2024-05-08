@@ -1,5 +1,3 @@
-import {defineType, defineArrayMember} from 'sanity'
-
 /**
  * This is the schema type for block content used in the post document type
  * Importing this type into the studio configuration's `schema` property
@@ -11,17 +9,17 @@ import {defineType, defineArrayMember} from 'sanity'
  *  }
  */
 
-export default defineType({
+export const blockContent = {
   title: 'Block Content',
   name: 'blockContent',
   type: 'array',
   of: [
-    defineArrayMember({
+    {
       title: 'Block',
       type: 'block',
-      // Styles let you define what blocks can be marked up as. The default
-      // set corresponds with HTML tags, but you can set any title or value
-      // you want, and decide how you want to deal with it where you want to
+      // Styles let you set what your user can mark up blocks with. These
+      // correspond with HTML tags, but you can set any title or value
+      // you want and decide how you want to deal with it where you want to
       // use your content.
       styles: [
         {title: 'Normal', value: 'normal'},
@@ -32,10 +30,10 @@ export default defineType({
         {title: 'Quote', value: 'blockquote'},
       ],
       lists: [{title: 'Bullet', value: 'bullet'}],
-      // Marks let you mark up inline text in the Portable Text Editor
+      // Marks let you mark up inline text in the block editor.
       marks: {
         // Decorators usually describe a single property – e.g. a typographic
-        // preference or highlighting
+        // preference or highlighting by editors.
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
@@ -56,11 +54,11 @@ export default defineType({
           },
         ],
       },
-    }),
+    },
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
-    defineArrayMember({
+    {
       type: 'image',
       options: {hotspot: true},
       fields: [
@@ -70,6 +68,6 @@ export default defineType({
           title: 'Alternative Text',
         }
       ]
-    }),
+    },
   ],
-})
+}

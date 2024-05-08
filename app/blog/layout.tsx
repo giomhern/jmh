@@ -1,11 +1,9 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import Link from "next/link";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,18 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {draftMode().isEnabled && (
-          <div>
-            <Link className="p-4 bg-blue-300 block" href="/api/disable-draft">
-              Disable Preview Mode
-            </Link>
-          </div>
-        )}
-        {children}
-        {draftMode().isEnabled && <VisualEditing />}
-      </body>
-    </html>
+    <main>
+      {children}
+    </main>
   );
 }

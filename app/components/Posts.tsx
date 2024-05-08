@@ -7,7 +7,6 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
       {posts?.length > 0 ? (
         posts.map((post) => (
           <Link key={post.id} href={`/blog/${post.slug.current}`}>
-            <h1>{post.slug.current}</h1>
             <h2 className="p-4 hover:bg-blue-400">{post.title}</h2>
           </Link>
         ))
