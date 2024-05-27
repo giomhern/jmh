@@ -2,7 +2,6 @@
 'use client';
 import { JSX, PromiseLikeOfReactNode } from 'react';
 import React, { ReactNode, Component } from 'react'
-import Navbar from './components/nav';
 
 const jumbo = <section className='flex md:px-20 md:py-10 px-10 py-2 justify-start font-extrabold'>
     <p className='text-2xl break-words md:text-4xl lg:text-6xl mx-7 md:mx-8 lg:mx-10'>A 24 year old <span className="text-bright">undocumented/DACA  entrepreneur </span>sharing his journey of <span className='text-bright'>starting  a business</span></p>
@@ -83,7 +82,6 @@ function card(tag: string | number | boolean | JSX.Element | Iterable<ReactNode>
 export default function Home() {
   return (
     <main className="min-h-screen bg-blue-600 text-white">
-      <Navbar />
       {jumbo}
       <div className="md:grid md:grid-cols-2 flex flex-col-reverse justify-center items-center py-5 px-20">
         <ol className="relative border-l border-gray-200 dark:border-gray-700 py-3 my-10 text-xl">

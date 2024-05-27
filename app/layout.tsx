@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import Link from "next/link";
+import Navigation from "./components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-white`}>
         {draftMode().isEnabled && (
           <div>
             <Link className="p-4 bg-blue-300 block" href="/api/disable-draft">

@@ -1,6 +1,9 @@
 import { SanityDocument } from "next-sanity";
 import { useMemo } from "react";
 import Link from "next/link";
+import imageUrlBuilder from "@sanity/image-url";
+import { dataset, projectId } from "@/sanity/env";
+import PostPreview from "./PostPreview";
 
 const getCurrentDate = () => {
   const today = new Date();
@@ -14,53 +17,38 @@ const getCurrentDate = () => {
 
 export default function Posts({ posts }: { posts: SanityDocument[] }) {
   const currentDate = useMemo(() => getCurrentDate(), []);
+
   return (
-    <main className="mx-auto divide-blue-100 min-h-screen bg-white">
-      <nav className="sticky top-0 z-10 flex justify-between px-10 py-8 bg-blue-100 backdrop-blur-lg backdrop-filter bg-opacity-20">
+    <main className="mx-auto min-h-screen bg-white text-gray-800">
+      <nav className="sticky top-0 z-10 flex justify-between px-10 py-8 text-black bg-white backdrop-blur-lg backdrop-filter bg-opacity-20">
         <p>juanmayahernandez@gmail.com</p>
         <section className="flex space-x-3 items-center">
-          <p>LinkedIn </p>
+          <Link href={""}>LinkedIn </Link>
           <p className="font-bold">/</p>
-          <p>Tiktok</p>
+          <Link href={""}>Tiktok</Link>
           <p className="font-bold">/</p>
-          <p>Youtube</p>
+          <Link href={""}>Youtube</Link>
           <p className="font-bold">/</p>
-          <p>Instagram</p>
+          <Link href={""}>Instagram</Link>
         </section>
       </nav>
 
       <section className="max-w-2xl mx-auto">
-        <div>
-          <h2 className="text-3xl font-semibold">Stories</h2>
-          <div className="flex  space-x-4 divide-x-2 divide-gray-300">
+        <div className="pb-5">
+          <h2 className="text-4xl font-medium pb-2">Stories</h2>
+          <div className="flex text-sm space-x-2 ">
             <h5 className="text-gray-400">{currentDate}</h5>
-            <h5 className="text-gray-400 pl-4">{posts.length} stories</h5>
+            <h5 className="text-gray-400">•</h5>
+            <h5 className="text-gray-400">{posts.length} stories</h5>
           </div>
         </div>
 
-        {posts?.length > 0 ? (
-          posts.map((post) => (
-            <div>
-              {post?.title}
-              
-            </div>
-          ))
-        ) : (
-          <div>No posts found</div>
-        )}
+        <ul className="space-y-5">
+          {posts.map((post) => (
+            <PostPreview post={post} />
+          ))}
+        </ul>
       </section>
-      {/* start navigation bar 
-
-    {posts?.length > 0 ? (
-        posts.map((post) => (
-          <Link key={post.id} href={`/blog/${post.slug.current}`}>
-            <h2 className="p-4 hover:bg-blue-400">{post.title}</h2>
-          </Link>
-        ))
-      ) : (
-        <div className="p-4 text-red-400">No posts found</div>
-      )}
-*/}
     </main>
   );
 }
