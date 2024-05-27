@@ -1,25 +1,8 @@
-import * as React from "react";
-import Image from "next/image";
 import impressions from "../components/impressions";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-black">
-      {/* start navigation bar */}
-      <nav className="sticky top-0 z-10 flex justify-between px-10 py-8 bg-gray-100 backdrop-blur-lg backdrop-filter bg-opacity-20">
-        <p>juanmayahernandez@gmail.com</p>
-        <section className="flex space-x-3 items-center">
-          <p>LinkedIn </p>
-          <p className="font-bold">/</p>
-          <p>Tiktok</p>
-          <p className="font-bold">/</p>
-          <p>Youtube</p>
-          <p className="font-bold">/</p>
-          <p>Instagram</p>
-        </section>
-      </nav>
-      {/* end navigation bar */}
-
       {/* start header */}
       <div className="bg-gray-100 flex flex-col justify-center items-center px-10 pt-24 pb-44 rounded-b-[150px]">
         <section className="flex items-center pb-10">
