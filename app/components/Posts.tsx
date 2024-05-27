@@ -45,7 +45,7 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
 
         <ul className="space-y-5">
           {posts.map((post) => (
-            <PostPreview post={post} />
+            <PostPreview key={post._id} post={post} />
           ))}
         </ul>
       </section>

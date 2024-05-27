@@ -21,7 +21,7 @@ export async function Post({ post }: { post: SanityDocument }) {
           </p>
           <p className="text-gray-500 text-md">•</p>
           {categories.map((category: any) => (
-            <p className="text-md text-gray-500">{toLowerCase(category)}</p>
+            <p key={category} className="text-md text-gray-500">{toLowerCase(category)}</p>
           ))}
         </div>
       </div>
