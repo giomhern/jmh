@@ -5,7 +5,7 @@ export default function Socials() {
       <p className="font-semibold tracking-tight leading-[1.5] text-gray-800 break-words leading-regular md:text-5xl text-3xl md:pb-6 pb-2 border-b text-left border-gray-800">
         Social Media Reach
       </p>
-      <ul className="md:flex md:flex-row grid grid-cols-2 place-items-center md:justify-center md:items-center pt-5 md:space-x-24 list-none">
+      <ul className="md:flex md:flex-row grid grid-cols-2 place-items-center md:justify-center md:items-center md:pt-20 pt-10 md:space-x-24 list-none">
         {impressions.map((impression) => {
           return (
             <li
