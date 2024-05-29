@@ -4,7 +4,7 @@ export default function Newsletter() {
   return (
     <section className="flex flex-col justify-center items-center pt-16 pb-20">
       <div className="flex justify-center pb-10">
-        <div className="h-56 w-56 z-0 relative rounded-full bg-gray-200 flex items-center justify-center">
+        <div className="h-56 w-56 z-0 relative rounded-full bg-blue-100 flex items-center justify-center">
           <svg
             width="200"
             height="200"
