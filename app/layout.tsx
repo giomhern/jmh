@@ -7,6 +7,7 @@ import { draftMode } from "next/headers";
 import Link from "next/link";
 import Navbar from "./components/Navigation";
 import Footer from "./components/Footer";
+import NavbarMobileAnimation from "./components/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,6 @@ export default function RootLayout({
             </Link>
           </div>
         )}
-        <Navbar />
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>

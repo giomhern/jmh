@@ -1,8 +1,8 @@
-import impressions from "../components/impressions";
+import impressions from "./ImpressionsData";
 export default function Socials() {
   return (
-    <section className="bg-blue-100 py-24 flex flex-col rounded-t-[125px]">
-      <p className="font-semibold tracking-tight leading-[1.5] mx-auto text-gray-800 break-words leading-regular md:text-4xl text-sm text-center pb-10">
+    <section className="bg-blue-100 py-24 flex flex-col md:rounded-t-[125px] rounded-t-[75px]">
+      <p className="font-semibold tracking-tight leading-[1.5] mx-auto text-gray-800 break-words leading-regular md:text-4xl text-xl text-center pb-10">
         Utilize social networks to create meaningful impact.
       </p>
 
@@ -16,15 +16,18 @@ export default function Socials() {
         <div className="flex-grow border-t border-gray-800"></div>
       </div>
 
-      <ul className="flex flex-col md:flex-row justify-center items-center pt-5 md:space-x-24 list-none">
+      <ul className="md:flex md:flex-row grid grid-cols-2 place-items-center md:justify-center md:items-center pt-5 md:space-x-24 list-none">
         {impressions.map((impression) => {
           return (
-            <li key={impression.id} className="md:space-y-3">
-              <div className="h-16 py-3 flex items-center">
+            <li
+              key={impression.id}
+              className="flex flex-col items-center md:space-y-3"
+            >
+              <div className="flex items-center justify-center py-3">
                 {impression.platform}
               </div>
-              <div>
-                <p className="text-4xl text-gray-800 font-semibold tracking-tight">
+              <div className="text-center">
+                <p className="md:text-4xl text-xl text-gray-800 font-semibold tracking-tight">
                   {impression.header}
                 </p>
                 <p className="tracking-tight text-gray-500">

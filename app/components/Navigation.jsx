@@ -1,148 +1,145 @@
 "use client";
-import Link from "next/link";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react";
+import {
+  FaUser,
+  FaHeart,
+  FaShoppingCart,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { title: "What we do", href: "/" },
-  { title: "How it works", href: "/" },
-  { title: "Case studies", href: "/" },
-  { title: "About", href: "/" },
-  { title: "Contact", href: "/" },
+  { title: "Home", url: "/" },
+  { title: "About", url: "/about" },
+  { title: "Services", url: "/services" },
+  { title: "Contact", url: "/contact" },
 ];
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const toggleMenu = () => {
-    setOpen((prevOpen) => !prevOpen);
+
+const iconList = [
+  { icon: <FaUser /> },
+  { icon: <FaHeart /> },
+  { icon: <FaShoppingCart /> },
+  { icon: <FaBars /> }, // Added the FaBars icon for the menu
+];
+
+function NavbarMobileAnimation(props) {
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
   };
-  const menuVars = {
-    initial: {
-      scaleY: 0,
+
+  const modalVariants = {
+    hidden: {
+      y: "-100vh",
     },
-    animate: {
-      scaleY: 1,
+    visible: {
+      y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.12, 0, 0.39, 0],
+        type: "tween", // Set transition type to 'tween'
+        duration: 0.3, // Specify duration
       },
     },
     exit: {
-      scaleY: 0,
+      y: "-100vh",
       transition: {
-        delay: 0.5,
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
+        type: "tween",
+        duration: 0.3,
+        delay: 0.3,
       },
     },
   };
-  const containerVars = {
-    initial: {
+
+  const linkItemVariants = {
+    hidden: { opacity: 0, y: "50%" },
+    visible: {
+      opacity: 1,
+      y: 0,
       transition: {
-        staggerChildren: 0.09,
+        duration: 0.5,
+        ease: "easeOut", // Add ease-out easing function
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: "50%",
+      transition: {
+        duration: 0.1,
+        ease: "easeOut", // Add ease-out easing function
+      },
+    },
+  };
+
+  const navLinksVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+    exit: {
+      transition: {
+        staggerChildren: 0.05,
         staggerDirection: -1,
       },
     },
-    open: {
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.09,
-        staggerDirection: 1,
-      },
-    },
   };
 
   return (
-    <header>
-      <nav className="flex justify-between items-center py-8 lg:py-4 px-2">
-        <div className="flex items-center gap-[1ch]">
-          <div className="w-5 h-5 bg-yellow-400 rounded-full" />
-          <span className="text-sm font-semibold tracking-widest">
-            PORTFOLIO
-          </span>
-        </div>
-        <div className="lg:flex hidden gap-12 text-md text-zinc-400">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/projects"}>Projects</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"/contact"}>Contact</Link>
-        </div>
-        <div
-          className="cursor-pointer lg:hidden text-md text-black"
-          onClick={toggleMenu}
-        >
-          Menu
-        </div>
-      </nav>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            variants={menuVars}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-black p-10"
-          >
-            <div className="flex h-full flex-col">
-              <div className="flex justify-between">
-                <h1 className="text-lg text-black">Portfolio</h1>
-                <p
-                  className="cursor-pointer text-md text-black"
-                  onClick={toggleMenu}
-                >
-                  Close
-                </p>
-              </div>
-              <motion.div
-                variants={containerVars}
-                initial="initial"
-                animate="open"
-                exit="initial"
-                className="flex flex-col h-full justify-center font-lora items-center gap-4 "
-              >
-                {navLinks.map((link, index) => {
-                  return (
-                    <div key={index} className="overflow-hidden">
-                      <MobileNavLink
-                        key={index}
-                        title={link.title}
-                        href={link.href}
-                      />
-                    </div>
-                  );
-                })}
-              </motion.div>
+    <nav className="h-screen bg-gray-800 py-4 px-4">
+      <div className="container mx-auto flex justify-between items-center ">
+        <div className="text-white font-bold text-xl">Logo</div>
+        <ul className="flex text-white gap-6 items-center cursor-pointer">
+          {iconList.map((item, index) => (
+            <div
+              key={index}
+              onClick={index === iconList.length - 1 ? toggleModal : null}
+            >
+              {item.icon}
             </div>
+          ))}
+        </ul>
+      </div>
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="fixed inset-0 flex justify-center items-center bg-gray-900"
+            variants={modalVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <FaTimes
+              className="absolute top-6 right-4 text-white cursor-pointer"
+              onClick={toggleModal}
+              style={{ fontSize: "16px" }}
+            />
+            <motion.div
+              className="relative bg-gray-900 w-full"
+              variants={navLinksVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              <div className="flex flex-col gap-8 items-center justify-center h-full ">
+                {navLinks.map((link, index) => (
+                  <motion.span
+                    key={index}
+                    className="text-white font-light text-2xl cursor-pointer"
+                    variants={linkItemVariants}
+                  >
+                    {link.title}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </nav>
   );
-};
+}
 
-export default Navbar;
-const mobileLinkVars = {
-  initial: {
-    y: "30vh",
-    transition: {
-      duration: 0.5,
-      ease: [0.37, 0, 0.63, 1],
-    },
-  },
-  open: {
-    y: 0,
-    transition: {
-      ease: [0, 0.55, 0.45, 1],
-      duration: 0.7,
-    },
-  },
-};
-const MobileNavLink = ({ title, href }) => {
-  return (
-    <motion.div
-      variants={mobileLinkVars}
-      className="text-5xl uppercase text-black"
-    >
-      <Link href={href}>{title}</Link>
-    </motion.div>
-  );
-};
+export default NavbarMobileAnimation;

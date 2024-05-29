@@ -2,7 +2,7 @@ import Signup from "./Signup";
 import Socials from "./Socials";
 export default function Newsletter() {
   return (
-    <section className="flex flex-col justify-center items-center pt-16 pb-20">
+    <section className="flex flex-col justify-center items-center pt-16 pb-20 px-10">
       <div className="flex justify-center pb-10">
         <div className="h-56 w-56 z-0 relative rounded-full bg-blue-100 flex items-center justify-center">
           <svg
@@ -33,10 +33,10 @@ export default function Newsletter() {
           </svg>
         </div>
       </div>
-      <h2 className="text-6xl text-center font-semibold pb-5 text-gray-800">
+      <h2 className="md:text-6xl text-4xl text-center font-semibold pb-5 text-gray-800">
         Juan Maya Hernandez
       </h2>
-      <div className="flex text-md text-center space-x-2 pb-5">
+      <div className="flex md:text-lg text-sm text-center space-x-2 pb-5">
         <h5 className="text-gray-800">
           Building a $100K Net Worth As An Undocumented Entrepreneur and Sharing
           Lessons Weekly

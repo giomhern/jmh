@@ -6,9 +6,9 @@ export default function Signup() {
       <input
         type="email"
         placeholder="Your Email Address"
-        className="p-2 font-regular text-lg focus:ring-0 focus:ring-offset-0"
+        className="p-2 font-regular md:text-lg text-sm focus:ring-0 focus:ring-offset-0"
       />
-      <button className=" text-white text-lg py-2 px-6 font-medium border border-transparent bg-gray-800">
+      <button className=" text-white md:text-lg text-sm py-2 px-6 font-medium border border-transparent bg-gray-800">
         Subscribe
       </button>
     </form>
