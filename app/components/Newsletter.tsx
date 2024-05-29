@@ -2,7 +2,7 @@ import Signup from "./Signup";
 import Socials from "./Socials";
 export default function Newsletter() {
   return (
-    <section className="flex flex-col justify-center items-center pt-16 pb-20 px-10">
+    <section className="flex flex-col justify-center items-center pt-12 px-10 min-h-screen">
       <div className="flex justify-center pb-10">
         <div className="h-56 w-56 z-0 relative rounded-full bg-blue-100 flex items-center justify-center">
           <svg
