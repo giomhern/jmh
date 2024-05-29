@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="bg-white px-14 mx-auto">
-      <p className="font-semibold tracking-tight leading-[1.5] text-gray-800 break-words leading-regular md:text-5xl text-3xl pb-2 border-b border-gray-800">
+      <p className="font-semibold tracking-tight leading-[1.5] text-gray-800 break-words leading-regular md:text-5xl text-3xl md:pb-6 pb-2 border-b border-gray-800">
         Who I Am
       </p>
       <div className="grid md:grid-cols-3 grid-cols-1 md:py-16 py-10">
