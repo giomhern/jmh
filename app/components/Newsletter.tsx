@@ -33,7 +33,7 @@ export default function Newsletter() {
           </svg>
         </div>
       </div>
-      <h2 className="text-6xl text-center font-semibold pb-5">
+      <h2 className="text-6xl text-center font-semibold pb-5 text-gray-800">
         Juan Maya Hernandez
       </h2>
       <div className="flex text-md text-center space-x-2 pb-5">

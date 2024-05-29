@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import Link from "next/link";
-import Navigation from "./components/Navigation";
+import Navbar from "./components/Navigation";
 import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +30,7 @@ export default function RootLayout({
             </Link>
           </div>
         )}
-        <Navigation />
+        <Navbar />
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>
