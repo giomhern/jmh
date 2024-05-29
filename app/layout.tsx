@@ -31,6 +31,7 @@ export default function RootLayout({
             </Link>
           </div>
         )}
+        <Navbar />
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>
