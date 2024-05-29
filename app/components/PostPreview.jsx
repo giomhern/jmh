@@ -11,7 +11,7 @@ const PostPreview = ({ post }) => {
     <div className="space-y-2">
       <Link
         href={`/blog/${post.slug.current}`}
-        className="font-medium tracking-tight text-xl"
+        className="font-medium tracking-tight md:text-xl text-md"
       >
         {title}
       </Link>
@@ -23,6 +23,7 @@ const PostPreview = ({ post }) => {
           overflow: "hidden",
           textOverflow: "ellipsis",
         }}
+        className="text-xs"
       >
         <PortableText value={body[1]} />
       </div>
