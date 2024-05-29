@@ -2,7 +2,7 @@ import impressions from "./ImpressionsData";
 export default function Socials() {
   return (
     <section className="py-12 flex flex-col">
-      <p className="font-semibold tracking-tight leading-[1.5] mx-auto text-gray-800 break-words leading-regular md:text-4xl text-xl text-center pb-10">
+      <p className="font-semibold tracking-tight leading-[1.5] mx-auto text-gray-800 break-words leading-regular md:text-4xl text-xl text-center px-10 md:px-0 pb-10">
         Utilize social networks to create meaningful impact.
       </p>
 
