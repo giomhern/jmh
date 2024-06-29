@@ -19,7 +19,7 @@ export default function Posts({ posts }: { posts: SanityDocument[] }) {
   const currentDate = useMemo(() => getCurrentDate(), []);
 
   return (
-    <main className="mx-auto md:max-w-2xl bg-white text-gray-800 flex flex-grow flex-col py-10">
+    <main className="mx-auto md:max-w-2xl bg-white text-gray-800 flex flex-grow flex-col py-10 min-h-screen">
       <section className="px-8">
         <div className="pb-5">
           <h2 className="md:text-4xl text-xl font-medium pb-2">Stories</h2>

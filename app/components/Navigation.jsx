@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <nav className="bg-white px-8 py-6">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-gray-800">Logo</div>
+        <Link href="/" passHref>
+        <Image src="/head.png" alt="Head logo" width={50} height={50} />
+        </Link>
         <div className="hidden md:flex space-x-4">
           <Link
             href="/"
@@ -34,15 +36,7 @@ const Navbar = () => {
             Blog{" "}
           </Link>
           <Link
-            href="/about"
-            passHref
-            onClick={toggleMenu}
-            className="text-gray-800"
-          >
-            About{" "}
-          </Link>
-          <Link
-            href="/login"
+            href="/studio/presentation"
             passHref
             onClick={toggleMenu}
             className="text-gray-800"
@@ -111,15 +105,7 @@ const Navbar = () => {
             Blog{" "}
           </Link>
           <Link
-            href="/contact"
-            passHref
-            onClick={toggleMenu}
-            className="text-white text-2xl"
-          >
-            Contact
-          </Link>
-          <Link
-            href="/login"
+            href="/studio/presentation"
             passHref
             onClick={toggleMenu}
             className="text-white text-2xl"
